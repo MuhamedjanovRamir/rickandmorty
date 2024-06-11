@@ -112,6 +112,10 @@ const hideSidebar = () => isHide.value = true
   font-family: 'Kanit', sans-serif;
   padding: 30px 0px;
 
+  .sidebar_button {
+    display: none;
+  }
+
   .sidebar_title {
     font-size: 22px;
     margin-bottom: 10px;
@@ -187,6 +191,7 @@ const hideSidebar = () => isHide.value = true
     }
 
     .sidebar_button {
+      display: block;
       position: absolute;
       display: flex;
       justify-content: center;
