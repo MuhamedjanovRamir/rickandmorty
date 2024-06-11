@@ -1,0 +1,37 @@
+<script setup>
+
+const props = defineProps({
+  iconColor: String,
+  iconWidth: String,
+  iconHeight: String,
+})
+
+const { 
+  iconColor = 'red', 
+  iconWidth = '16', 
+  iconHeight = '16', 
+} = props
+
+</script>
+
+<template>
+  <svg 
+    :width="iconWidth" 
+    :height="iconHeight"
+    class="icon"
+    viewBox="0 0 512 512"
+  >
+    <path d="M428 224H288a48 48 0 01-48-48V36a4 4 0 00-4-4h-92a64 64 0 00-64 64v320a64 64 0 0064 64h224a64 64 0 0064-64V228a4 4 0 00-4-4z"/>
+    <path d="M419.22 188.59L275.41 44.78a2 2 0 00-3.41 1.41V176a16 16 0 0016 16h129.81a2 2 0 001.41-3.41z"/>
+  </svg>
+</template>
+
+<style lang="scss" scoped>
+.icon {
+  fill: v-bind(iconColor);
+
+  &:hover {
+    fill: #89C445;
+  } 
+}
+</style>
