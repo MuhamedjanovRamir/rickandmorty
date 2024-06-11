@@ -7,6 +7,7 @@ import vitePluginGhPages from 'vite-plugin-gh-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/rickandmorty/',
   plugins: [
     vue(),
     vueJsx(),
